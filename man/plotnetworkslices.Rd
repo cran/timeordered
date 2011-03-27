@@ -1,0 +1,67 @@
+\name{plotnetworkslices}
+\alias{plotnetworkslices}
+%- Also NEED an '\alias' for EACH other topic documented here.
+\title{
+Plots a time-aggregated network
+}
+\description{
+-
+}
+\usage{
+plotnetworkslices(slices, timedeltas)
+}
+%- maybe also 'usage' for other objects documented here.
+\arguments{
+  \item{slices}{
+A list of n time-aggregated networks
+}
+  \item{timedeltas}{
+A n x 2 matrix describing the start and stop times for each time-aggregated network
+}
+}
+\details{
+%%  ~~ If necessary, more details than the description above ~~
+}
+\value{
+None; used for its side effect of producing a plot.
+}
+\references{
+%% ~put references to the literature/web site here ~
+}
+\author{Benjamin Blonder \email{bblonder@email.arizona.edu}.}
+\note{
+%%  ~~further notes~~
+}
+
+%% ~Make other sections like Warning with \section{Warning }{....} ~
+
+\seealso{
+\code{\link{plotnetworkslices}}, \code{\link{generatetimedeltas}}, \code{\link{generatetimelags}}~~~
+}
+\examples{
+data(ants)
+allindivs <- c(union(ants$VertexFrom, ants$VertexTo), "NULL1", "NULL2")
+g <- generatetonetwork(ants, allindivs)
+td100 <- generatetimedeltas(0,1500,100)
+ns100 <- generatenetworkslices(g, td100)
+plotnetworkslices(ns100, td100)
+
+## The function is currently defined as
+function(slices, timedeltas)
+{
+	timestrings <- paste(timedeltas[,1]," - ", timedeltas[,2])
+	
+	par(mfrow=c(ceiling(sqrt(length(slices))),ceiling(sqrt(length(slices)))))
+	par(mar=c(1,1,1,1))
+	for (i in 1:length(slices)) 
+	{ 
+		plottanet(slices[[i]])
+		text(0,0,timestrings[i]) 
+	}
+
+  }
+}
+% Add one or more standard keywords, see file 'KEYWORDS' in the
+% R documentation directory.
+\keyword{ ~kwd1 }
+\keyword{ ~kwd2 }% __ONLY ONE__ keyword per line

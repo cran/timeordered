@@ -28,15 +28,11 @@ The name of the stop vertex.
 The time of the stop vertex. Must be a time at which an interaction has occurred involving this vertex.
 }
 }
-\details{
-%%  ~~ If necessary, more details than the description above ~~
-}
+
 \value{
 A vertex list containing all the events on the shortest-hop path between the start and stop vertices/times.
 }
-\references{
-%% ~put references to the literature/web site here ~
-}
+
 \author{Benjamin Blonder \email{bblonder@email.arizona.edu}.}
 \note{
 Multiple shortest-hop paths may exist; returns only one of them.

@@ -16,19 +16,13 @@ transformspreadbyindividual(sa)
 A data frame returned by \code{spreadanalysis}
 }
 }
-\details{
-%%  ~~ If necessary, more details than the description above ~~
-}
+
 \value{
 A data frame whose columns are the identities of vertices and whose rows are the mean fraction of vertices reached by the seed vertex at each time delay, averaged over all samples beginning at this vertex.
 }
-\references{
-%% ~put references to the literature/web site here ~
-}
+
 \author{Benjamin Blonder \email{bblonder@email.arizona.edu}.}
-\note{
-%%  ~~further notes~~
-}
+
 
 %% ~Make other sections like Warning with \section{Warning }{....} ~
 

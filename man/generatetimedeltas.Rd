@@ -22,19 +22,13 @@ The stopping time of the last time window.
 The size of each time window.
 }
 }
-\details{
-%%  ~~ If necessary, more details than the description above ~~
-}
+
 \value{
 A n x 2 matrix. Each row contains the start and stop time of a window with width delta.
 }
-\references{
-%% ~put references to the literature/web site here ~
-}
+
 \author{Benjamin Blonder \email{bblonder@email.arizona.edu}.}
-\note{
-%%  ~~further notes~~
-}
+
 
 %% ~Make other sections like Warning with \section{Warning }{....} ~
 

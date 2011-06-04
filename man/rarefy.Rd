@@ -19,19 +19,13 @@ The event list to be rarefied.
 A fraction (between 0 and 1) of the events to be randomly deleted.
 }
 }
-\details{
-%%  ~~ If necessary, more details than the description above ~~
-}
+
 \value{
 An event list with floor(nrow(raw) * fraction) events remaining.
 }
-\references{
-%% ~put references to the literature/web site here ~
-}
+
 \author{Benjamin Blonder \email{bblonder@email.arizona.edu}.}
-\note{
-%%  ~~further notes~~
-}
+
 
 %% ~Make other sections like Warning with \section{Warning }{....} ~
 

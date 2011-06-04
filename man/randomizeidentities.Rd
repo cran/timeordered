@@ -25,19 +25,13 @@ If true, subsets of data for withinvertexfrom are obtained using VertexFrom; if 
 Samples with or without replacement.
 }
 }
-\details{
-%%  ~~ If necessary, more details than the description above ~~
-}
+
 \value{
 An event list of the same size or smaller as raw. The returned event list will be smaller only if resampling produces events that connect a vertex to itself; these are removed.
 }
-\references{
-%% ~put references to the literature/web site here ~
-}
+
 \author{Benjamin Blonder \email{bblonder@email.arizona.edu}.}
-\note{
-%%  ~~further notes~~
-}
+
 
 %% ~Make other sections like Warning with \section{Warning }{....} ~
 

@@ -22,15 +22,11 @@ A vector time delays at which to determine the fraction of vertices reached.
 The number of random events to sample (without replacement) as seeds for the spreading process.
 }
 }
-\details{
-%%  ~~ If necessary, more details than the description above ~~
-}
+
 \value{
 A data frame whose first column is the identity of the starting vertex for each sample. Each subsequent column is named for each time delay and contains the fraction of total vertices reached by a spreading process beginning from the seed vertex by the time delay.
 }
-\references{
-%% ~put references to the literature/web site here ~
-}
+
 \author{Benjamin Blonder \email{bblonder@email.arizona.edu}.}
 \note{
 Results can be aggregated by start vertex - see \code{transformspreadbyindividual}

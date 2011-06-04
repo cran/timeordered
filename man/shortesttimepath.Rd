@@ -26,16 +26,12 @@ The time of the start vertex. Must be a time at which an interaction has occurre
 The name of the stop vertex.
 }
 }
-\details{
-%%  ~~ If necessary, more details than the description above ~~
-}
+
 \value{
 A vertex list containing all the events on the shortest-time path between the start vertex at the start time and the stop vertex at a later time.
 
 }
-\references{
-%% ~put references to the literature/web site here ~
-}
+
 \author{Benjamin Blonder \email{bblonder@email.arizona.edu}.}
 \note{
 May generate warning messages - don't worry!

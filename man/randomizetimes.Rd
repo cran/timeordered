@@ -25,19 +25,13 @@ If true, subsets of data for withinvertexfrom are obtained using VertexFrom; if 
 Samples with or without replacement.
 }
 }
-\details{
-%%  ~~ If necessary, more details than the description above ~~
-}
+
 \value{
 An event list of the same size as raw with event times resampled. Resampling does not break the relationship between start and stop time; i.e. resampled events will have the same duration as original events.
 }
-\references{
-%% ~put references to the literature/web site here ~
-}
+
 \author{Benjamin Blonder \email{bblonder@email.arizona.edu}.}
-\note{
-%%  ~~further notes~~
-}
+
 
 %% ~Make other sections like Warning with \section{Warning }{....} ~
 

@@ -19,9 +19,7 @@ An event list, consisting of a data frame with four columns: VertexFrom, VertexT
 A list of all possible vertices including ones not observed interacting during the range of time reported in \code{raw}.
 }
 }
-\details{
-%%  ~~ If necessary, more details than the description above ~~
-}
+
 \value{
 A n x n x m array, where n is the number of vertices and m is the maximum start time in the raw event list. The [i,j,k] entry of the array describes the latency from i to j at time k. NA is returned if there is not causally permitted path between i and j by time k. 
 }
@@ -35,9 +33,7 @@ Return value can require large memory allocation depending on the data set. Ensu
 
 %% ~Make other sections like Warning with \section{Warning }{....} ~
 
-\seealso{
-%% ~~objects to See Also as \code{\link{help}}
-}
+
 \examples{
 data(ants)
 allindivs <- c(union(ants$VertexFrom, ants$VertexTo), "NULL1", "NULL2")

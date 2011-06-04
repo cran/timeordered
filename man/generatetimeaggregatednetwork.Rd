@@ -22,19 +22,13 @@ The time at which to begin aggregating interactions.
 The time at which to stop aggregating interactions.
 }
 }
-\details{
-%%  ~~ If necessary, more details than the description above ~~
-}
+
 \value{
 A weighted time-aggregated network whose edge weights equal the number of interactions between those vertices in the time window.
 }
-\references{
-%% ~put references to the literature/web site here ~
-}
+
 \author{Benjamin Blonder \email{bblonder@email.arizona.edu}.}
-\note{
-%%  ~~further notes~~
-}
+
 
 %% ~Make other sections like Warning with \section{Warning }{....} ~
 

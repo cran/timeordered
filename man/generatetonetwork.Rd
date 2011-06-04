@@ -19,9 +19,7 @@ An event list, consisting of a data frame with four columns: VertexFrom, VertexT
 A list of all possible vertices potentially including ones not observed interacting during the range of time reported in \code{raw}. Defaults to the vertices observed in raw.
 }
 }
-\details{
-%%  ~~ If necessary, more details than the description above ~~
-}
+
 \value{
 A weighted directed network of class 'igraph'. Each vertex represents an individual at a time during which an interaction occurred. Edges represent causally permitted paths of resource flow and have a TimeCost, describing the time between interactions for an individual, or is 0 if the edge represents an interaction, and a HopCost, which is 0 if the edge connects the same individual at multiple times and 1 if it connects different individuals at the same time.
 }
@@ -29,15 +27,11 @@ A weighted directed network of class 'igraph'. Each vertex represents an individ
 Kostakos V. Temporal Graphs. arXiv (2008) vol. physics.soc-ph
 }
 \author{Benjamin Blonder \email{bblonder@email.arizona.edu}.}
-\note{
-%%  ~~further notes~~
-}
+
 
 %% ~Make other sections like Warning with \section{Warning }{....} ~
 
-\seealso{
 
-}
 \examples{
 data(ants)
 allindivs <- c(union(ants$VertexFrom, ants$VertexTo), "NULL1", "NULL2")

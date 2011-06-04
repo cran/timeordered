@@ -19,19 +19,13 @@ The time-ordered network to be sliced.
 A n x 2 matrix, where each row contains a set of start (first column) and stop (second column) times at which the network should be sliced.
 }
 }
-\details{
-%%  ~~ If necessary, more details than the description above ~~
-}
+
 \value{
 A list containing n time-aggregated networks corresponding to the n time windows.
 }
-\references{
-%% ~put references to the literature/web site here ~
-}
+
 \author{Benjamin Blonder \email{bblonder@email.arizona.edu}.}
-\note{
-%%  ~~further notes~~
-}
+
 
 %% ~Make other sections like Warning with \section{Warning }{....} ~
 

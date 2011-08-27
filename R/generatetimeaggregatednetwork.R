@@ -8,12 +8,14 @@ function(g, starttime, stoptime)
 	newedgelist$EdgePair <- as.numeric(factor(paste(newedgelist$VertexFrom, 	newedgelist$VertexTo)))
 	tabcounts <- tabulate(newedgelist$EdgePair)
 	newedgelist$Count <- tabcounts[newedgelist$EdgePair]
+	newedgelist$weight <- newedgelist$Count
+	
 	uniqueedgelist <- unique(newedgelist)
-	uniqueedgelist <- uniqueedgelist[,c("VertexFrom","VertexTo","Count")]
+	uniqueedgelist <- uniqueedgelist[,c("VertexFrom","VertexTo","weight","Count")]
 	allvertices <- as.data.frame(unique(V(g)$Name))
 	
 	timeaggregatednetwork <- graph.data.frame(d=uniqueedgelist, vertices=allvertices)
-	
+
 	return(timeaggregatednetwork)
 }
 

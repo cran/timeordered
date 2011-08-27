@@ -7,7 +7,7 @@ function(g,path=NULL,edgecolor="gray",edgehighlightcolor="red",vertex.size=0.01,
 		E(g, path=path)$color=edgehighlightcolor
 	}
 	names <- V(g)$Name
-	names[V(g)$Time > 0] <- NA
+	names[V(g)$Time > min(V(g)$Time)] <- NA
 
 	plot(g, layout=cbind(as.numeric(factor(V(g)$Name)), V(g)$Time), vertex.label=names,vertex.size=vertex.size,edge.arrow.size=edge.arrow.size,edge.width=edge.width, 	vertex.color=vertex.color,vertex.label.cex=vertex.label.cex,vertex.frame.color=vertex.frame.color,vertex.label.color=vertex.label.color,vertex.label.family="Helvetica")
 }

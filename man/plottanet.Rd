@@ -8,7 +8,10 @@ Plots a time-aggregated network.
 Plots a time-aggregated network. See igraph.plotting for more details.
 }
 \usage{
-plottanet(timeaggregatednetwork, layout = layout.circle, vertex.label = V(timeaggregatednetwork)$name, vertex.size = 0, vertex.label.cex = 0.5, edge.arrow.size = 0.5, edge.width = E(timeaggregatednetwork)$Count/5)
+plottanet(timeaggregatednetwork, layout = layout.circle, 
+	vertex.label = V(timeaggregatednetwork)$name, vertex.size = 0, 
+	vertex.label.cex = 0.5, edge.arrow.size = 0.5, 
+	edge.width = E(timeaggregatednetwork)$Count/5)
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{
@@ -53,13 +56,8 @@ allindivs <- c(union(ants$VertexFrom, ants$VertexTo), "NULL1", "NULL2")
 g <- generatetonetwork(ants, allindivs)
 tan <- generatetimeaggregatednetwork(g, 0, 500)
 plottanet(tan,layout=layout.kamada.kawai)
-
-## The function is currently defined as
-function(timeaggregatednetwork,layout=layout.circle,vertex.label=V(timeaggregatednetwork)$name,vertex.size=0,vertex.label.cex=0.5,edge.arrow.size=0.5,edge.width=E(timeaggregatednetwork)$Count/5)
-{
-	plot(timeaggregatednetwork,layout=layout,vertex.label=vertex.label,vertex.size=vertex.size,vertex.label.cex=vertex.label.cex,edge.arrow.size=edge.arrow.size,edge.width=edge.width,vertex.label.family="Helvetica")	
-  }
 }
+
 % Add one or more standard keywords, see file 'KEYWORDS' in the
 % R documentation directory.
 \keyword{ ~kwd1 }

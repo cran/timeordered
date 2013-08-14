@@ -37,12 +37,7 @@ sa <- spreadanalysis(g, seq(0,1000,by=50), 20)
 b <- transformspreadbyindividual(sa)
 plot(ts(b),plot.type="single",col=rainbow(ncol(b)),xlab="Time",ylab="Fraction reached")
 legend("bottomright",colnames(b),lwd=1,col=rainbow(ncol(b)),bg="white")
-## The function is currently defined as
-function(sa)
-{
-	# returns mean by individual at each timepoint
-	return(sapply(by(sa, sa$startvertex, function(x) { apply(x[,-1], 2, mean) }), function(x){x}))
-  }
+
 }
 % Add one or more standard keywords, see file 'KEYWORDS' in the
 % R documentation directory.

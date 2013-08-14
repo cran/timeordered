@@ -37,13 +37,6 @@ data(ants)
 allindivs <- c(union(ants$VertexFrom, ants$VertexTo), "NULL1", "NULL2")
 g <- generatetonetwork(ants, allindivs)
 plottonet(g)
-
-## The function is currently defined as
-function(raw, allindivs)
-{
-	vel <- generatetonetworkfromvel(generatevertexedgelist(raw, allindivs=union(raw$VertexFrom, raw$VertexTo)))
-	return(vel)
-  }
 }
 % Add one or more standard keywords, see file 'KEYWORDS' in the
 % R documentation directory.

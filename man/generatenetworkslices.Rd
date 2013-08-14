@@ -40,14 +40,6 @@ td100 <- generatetimedeltas(0,1500,100)
 ns100 <- generatenetworkslices(g, td100)
 plotnetworkslices(ns100, td100)
 
-
-## The function is currently defined as
-function(g, timedeltas)
-{
-
-	
-	return(apply(timedeltas, 1, function(x) { generatetimeaggregatednetwork(g, x[1],x[2]) }))
-  }
 }
 % Add one or more standard keywords, see file 'KEYWORDS' in the
 % R documentation directory.

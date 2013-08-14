@@ -38,13 +38,6 @@ A n x 2 matrix. Each row contains the start and stop time of a window with width
 \examples{
 td100 <- generatetimedeltas(0,1500,100)
 boxplot(t(td100))
-
-## The function is currently defined as
-function(starttime, stoptime, delta)
-{
-	ts <- seq(starttime,stoptime,by=delta)
-	return(cbind(head(ts,-1),tail(ts,-1)))	
-  }
 }
 % Add one or more standard keywords, see file 'KEYWORDS' in the
 % R documentation directory.

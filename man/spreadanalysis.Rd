@@ -44,38 +44,6 @@ g <- generatetonetwork(ants, allindivs)
 sa <- spreadanalysis(g, seq(0,1000,by=50), 20)
 boxplot(sa[,-1],xlab="Time delay",ylab="Fraction reached")
 
-## The function is currently defined as
-function(g, timedelays, numsamples)
-{
-	vertices <- V(g)
-	vertexnames <- unique(V(g)$Name)
-	
-	numreached <- matrix(NA, nrow=numsamples, ncol=length(timedelays))
-	
-	verticestosample <- sample(vertices, numsamples)
-	startvertexnames <- verticestosample$Name
-	
-	for (i in 1:numsamples)
-	{
-		sg <- subgraph(graph=g,v=subcomponent(graph=g, v=verticestosample[[i]],mode="out"))
-		
-		for (j in 1:length(timedelays))
-		{
-			starttime <- min(V(sg)$Time)
-			
-			numreached[i,j] <- length(unique(V(sg)[Time < (starttime + timedelays[j])]$Name))	
-		}
-		
-		print(i/numsamples)
-	}
-	
-	tempresult <- data.frame(startvertexnames, numreached/length(vertexnames))
-	names(tempresult) <- c("startvertex",paste(timedelays))
-
-	return(tempresult)
-	
-
-  }
 }
 % Add one or more standard keywords, see file 'KEYWORDS' in the
 % R documentation directory.

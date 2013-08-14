@@ -29,13 +29,6 @@ generatetonetworkfromvel(vel)
 ##---- Should be DIRECTLY executable !! ----
 ##-- ==>  Define data, use random,
 ##--	or do  help(data=index)  for the standard data sets.
-
-## The function is currently defined as
-function(vel)
-{
-	g <- graph.data.frame(vel$edgelist, directed=TRUE, vertices=vel$vertexlist)
-	return(g)
-  }
 }
 % Add one or more standard keywords, see file 'KEYWORDS' in the
 % R documentation directory.

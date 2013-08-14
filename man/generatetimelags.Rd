@@ -39,15 +39,6 @@ A n x 2 matrix. Each row contains the start and stop time of a window with width
 \examples{
 tl100 <- generatetimelags(0,1500,100)
 boxplot(t(tl100))
-
-## The function is currently defined as
-function(starttime, stoptime, delta)
-{
-	tstop <- seq(starttime,stoptime,by=delta)
-	tstart <- rep(0,length(tstop))
-	
-	return(cbind(tstart, tstop))
-  }
 }
 % Add one or more standard keywords, see file 'KEYWORDS' in the
 % R documentation directory.

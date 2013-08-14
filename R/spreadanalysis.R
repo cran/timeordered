@@ -17,7 +17,7 @@ function(g, timedelays, numsamples)
 		{
 			starttime <- min(V(sg)$Time)
 			
-			numreached[i,j] <- length(unique(V(sg)[Time < (starttime + timedelays[j])]$Name))	
+			numreached[i,j] <- length(unique(V(sg)[V(sg)$Time < (starttime + timedelays[j])]$Name))	
 		}
 		
 		print(i/numsamples)

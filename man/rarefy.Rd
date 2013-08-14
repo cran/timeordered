@@ -37,20 +37,7 @@ An event list with floor(nrow(raw) * fraction) events remaining.
 ##-- ==>  Define data, use random,
 ##--	or do  help(data=index)  for the standard data sets.
 
-## The function is currently defined as
-function(raw, fraction)
-{
-	if (fraction > 1)
-	{
-		stop("fraction must be less than 1")	
-	}
-	
-	nr <- nrow(raw)
-	
-	indices <- sample(nr, floor(fraction*nr))
-	
-	return(raw[indices,])	
-  }
+
 }
 % Add one or more standard keywords, see file 'KEYWORDS' in the
 % R documentation directory.

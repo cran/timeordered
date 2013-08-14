@@ -1,7 +1,7 @@
 generatetimeaggregatednetwork <-
 function(g, starttime, stoptime)
 {
-	sg <- subgraph(g, V(g)[Time >= starttime & Time < stoptime])
+	sg <- induced.subgraph(g, V(g)[V(g)$Time >= starttime & V(g)$Time < stoptime])
 
 	newedgelist <- data.frame(VertexFrom=E(sg)$VertexFrom,VertexTo=E(sg)$VertexTo,stringsAsFactors=FALSE)
 	newedgelist <- newedgelist[newedgelist[,1] != newedgelist[,2],]

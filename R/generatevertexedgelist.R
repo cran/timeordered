@@ -25,15 +25,6 @@ function(raw, allindivs)
 	selflistall <- do.call("rbind.fill", selflist)
 	finaleventlist <- rbind(finaleventlist, selflistall)
 	
-	#for (i in 1:length(selflist))
-	#{
-	#	tempdf <- selflist[[i]]
-#		print(tempdf)
-		#names(tempdf) <- finalnames
-#		finaleventlist <- rbind(finaleventlist, tempdf)
-#	}
-	
-	
 	
 	# also add the non-interactors
 	if (length(noninteractors) > 0)

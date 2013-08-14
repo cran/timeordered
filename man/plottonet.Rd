@@ -8,7 +8,11 @@ Plots a time-ordered network.
 Plots a time-ordered network with vertices ordinated along the x-axis and time increasing along the y-axis. Interactions are drawn as horizontal lines; vertices are connected to themselves in time by vertical lines.
 }
 \usage{
-plottonet(g, path = NULL, edgecolor = "gray", edgehighlightcolor = "red", vertex.size = 0.01, edge.arrow.size = 0.1, edge.width = 0.2, vertex.color = NA, vertex.label.cex = 0.1, vertex.frame.color = NA, vertex.label.color = "black")
+plottonet(g, path = NULL, edgecolor = "gray", 
+	edgehighlightcolor = "red", vertex.size = 0.01, 
+	edge.arrow.size = 0.1, edge.width = 0.2, 
+	vertex.color = NA, vertex.label.cex = 0.1, 
+	vertex.frame.color = NA, vertex.label.color = "black")
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{

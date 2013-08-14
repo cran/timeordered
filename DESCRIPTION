@@ -1,24 +1,17 @@
 Package: timeordered
 Type: Package
 Title: Time-ordered and time-aggregated network analyses
-Version: 0.9.2
-Date: 2011-08-27
+Version: 0.9.3
+Date: 2013-08-14
 Author: Benjamin Blonder
 Maintainer: Benjamin Blonder <bblonder@gmail.com>
-Description: Methods for incorporating time into network analysis.
-        Construction of time-ordered networks (temporal graphs).
-        Shortest-time and shortest-path-length analyses. Resource
-        spread calculations. Data resampling and rarefaction for null
-        model construction. Reduction to time-aggregated networks with
-        variable window sizes; application of common descriptive
-        statistics to these networks. Vector clock latencies. Plotting
-        functionalities & full compatibility with all network methods
-        in the igraph0 library.
+Description: Methods for incorporating time into network analysis. Construction of time-ordered networks (temporal graphs). Shortest-time and shortest-path-length analyses. Resource spread calculations. Data resampling and rarefaction for null model construction. Reduction to time-aggregated networks with variable window sizes; application of common descriptive statistics to these networks. Vector clock latencies. Plotting functionalities.
 License: GPL-3
 LazyLoad: yes
-Depends: igraph0, plyr
-Enhances: igraph0
+Depends: igraph, plyr
+Enhances:
 BuildManual: no
-Packaged: 2012-08-27 11:00:18 UTC; bblonder
+Packaged: 2013-08-14 09:39:18 UTC; benjaminblonder
+NeedsCompilation: no
 Repository: CRAN
-Date/Publication: 2012-08-27 12:12:33
+Date/Publication: 2013-08-14 12:01:38

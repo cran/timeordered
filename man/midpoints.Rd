@@ -32,12 +32,6 @@ A mean value for each of n rows of td
 \examples{
 tl100 <- generatetimelags(0,1500,100)
 boxplot(t(midpoints(tl100)))
-
-## The function is currently defined as
-function(td)
-{
-	return(apply(td, 1, mean))
-  }
 }
 % Add one or more standard keywords, see file 'KEYWORDS' in the
 % R documentation directory.

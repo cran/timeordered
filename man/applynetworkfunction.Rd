@@ -45,12 +45,6 @@ ml100 <- applynetworkfunction(nl100, function(x){diameter(x)})
 par(mfrow=c(1,2))
 plot(midpoints(td100),unlist(md100),type="l",xlab="Time (window size = 100)",ylab="Diameter")
 plot(maxpoints(tl100),unlist(ml100),type="l",xlab="Aggregation time",ylab="Diameter")
-
-## The function is currently defined as
-function(slices, fun)
-{
-	return(lapply(slices, fun))	
-  }
 }
 % Add one or more standard keywords, see file 'KEYWORDS' in the
 % R documentation directory.

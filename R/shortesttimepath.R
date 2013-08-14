@@ -5,8 +5,8 @@ function(g, startvertexname, startvertextime, stopvertexname)
 	{
 		stop("must provide single startvertex and stop vertex")	
 	}
-	startvertex <- V(g)[Name==startvertexname & Time==startvertextime]
-	stopvertices <- V(g)[Name==stopvertexname & Time>=startvertextime]	
+	startvertex <- V(g)[V(g)$Name==startvertexname & V(g)$Time==startvertextime]
+	stopvertices <- V(g)[V(g)$Name==stopvertexname & V(g)$Time>=startvertextime]	
 	paths <- get.shortest.paths(g, startvertex, stopvertices, mode="out", weights=E(g)$TimeCost)
 	
 	shortestpath  <- paths[[which.min(lapply(paths, function(x) { tail(V(g)[x]$Time,1) })) ]]

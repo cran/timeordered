@@ -39,21 +39,6 @@ g <- generatetonetwork(ants, allindivs)
 td100 <- generatetimedeltas(0,1500,100)
 ns100 <- generatenetworkslices(g, td100)
 plotnetworkslices(ns100, td100)
-
-## The function is currently defined as
-function(slices, timedeltas)
-{
-	timestrings <- paste(timedeltas[,1]," - ", timedeltas[,2])
-	
-	par(mfrow=c(ceiling(sqrt(length(slices))),ceiling(sqrt(length(slices)))))
-	par(mar=c(1,1,1,1))
-	for (i in 1:length(slices)) 
-	{ 
-		plottanet(slices[[i]])
-		text(0,0,timestrings[i]) 
-	}
-
-  }
 }
 % Add one or more standard keywords, see file 'KEYWORDS' in the
 % R documentation directory.

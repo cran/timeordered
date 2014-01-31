@@ -8,6 +8,7 @@ function(g, startvertexname, startvertextime, stopvertexname, stopvertextime)
 	startvertex <- V(g)[V(g)$Name==startvertexname & V(g)$Time==startvertextime]
 	stopvertex <- V(g)[V(g)$Name==stopvertexname & V(g)$Time==stopvertextime]
 	vertices <- get.shortest.paths(g, startvertex, stopvertex, mode="out", weights=E(g)$HopCost)
+        if (is.list(vertices) && "vpath" %in% names(vertices)) { vertices <- vertices$vpath }
 	
 	return(V(g)[vertices[[1]] ])
 }

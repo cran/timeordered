@@ -1,4 +1,4 @@
-76b8071ff183babc5f6874acd09e2009 *DESCRIPTION
+bce8c3db285e269604ac37319fedc44a *DESCRIPTION
 924c805ad6f6d8b3def63041c5a2d26d *NAMESPACE
 8a79e9ad010dcd4313faf59040b20c37 *R/applynetworkfunction.R
 b3fb5ca101b321de0f2aea613383f0ef *R/generatelatencies.R
@@ -19,7 +19,7 @@ c30d71a04ef1accd62a7741ec9b764d4 *R/randomizetimes.R
 fbb9fb208ade42a2e49ef46e26c0f706 *R/rarefy.R
 45662e331e849178b512e31c247f1da0 *R/shortesthoppath.R
 41af15f293c6f3d5cf12101cfc02b0e1 *R/shortesttimepath.R
-2cb298b4eb9b36905971f8c7fc5a2abe *R/spreadanalysis.R
+2acfc746c5580200fa0a5dee2d1c057f *R/spreadanalysis.R
 bb3486c6e6a4c7e5a3fa1cca2ecf7115 *R/timeordered-internal.R
 4921aed020ef62291cf4d69a0922214a *R/transformspreadbyindividual.R
 6f803f98800955cbc2bffcfa9fc743c3 *data/ants.rda

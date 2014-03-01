@@ -11,7 +11,7 @@ function(g, timedelays, numsamples)
 	
 	for (i in 1:numsamples)
 	{
-		sg <- subgraph(graph=g,v=subcomponent(graph=g, v=verticestosample[[i]],mode="out"))
+		sg <- induced.subgraph(graph=g,vids=subcomponent(graph=g, v=verticestosample[[i]],mode="out"))
 		
 		for (j in 1:length(timedelays))
 		{

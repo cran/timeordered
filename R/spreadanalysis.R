@@ -1,33 +1,33 @@
 spreadanalysis <-
 function(g, timedelays, numsamples)
 {
-	vertices <- V(g)
-	vertexnames <- unique(V(g)$Name)
-	
 	numreached <- matrix(NA, nrow=numsamples, ncol=length(timedelays))
-	
-	verticestosample <- sample(vertices, numsamples)
-	startvertexnames <- verticestosample$Name
-	
+
+	vtos <- sample(length(V(g)), numsamples)
+
+  vnames <- V(g)[vtos]$Name
+  
 	for (i in 1:numsamples)
-	{
-		sg <- induced.subgraph(graph=g,vids=subcomponent(graph=g, v=verticestosample[[i]],mode="out"))
-		
+	{	  
+    thisv <- V(g)[ vtos[i] ]  
+    
+    whichv <- V(g)[subcomponent(graph=g, v=thisv, mode="out")]
+    
 		for (j in 1:length(timedelays))
 		{
-			starttime <- min(V(sg)$Time)
+			starttime <- min(whichv$Time)
 			
-			numreached[i,j] <- length(unique(V(sg)[V(sg)$Time < (starttime + timedelays[j])]$Name))	
+			numreached[i,j] <- length(unique(
+			  whichv[whichv$Time < (starttime + timedelays[j])]$Name
+          ))	
 		}
 		
 		print(i/numsamples)
 	}
 	
-	tempresult <- data.frame(startvertexnames, numreached/length(vertexnames))
+	tempresult <- data.frame(vnames, numreached/length(V(g)))
 	names(tempresult) <- c("startvertex",paste(timedelays))
-
+  
 	return(tempresult)
-	
-
 }
 

@@ -24,7 +24,7 @@ The number of random events to sample (without replacement) as seeds for the spr
 }
 
 \value{
-A data frame whose first column is the identity of the starting vertex for each sample. Each subsequent column is named for each time delay and contains the fraction of total vertices reached by a spreading process beginning from the seed vertex by the time delay.
+A data frame whose columns are named for each time delay and contains the fraction of total vertices reached by a spreading process beginning from the seed vertices by the time delay.
 }
 
 \author{Benjamin Blonder \email{bblonder@email.arizona.edu}.}

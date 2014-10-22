@@ -12,8 +12,8 @@ Methods for incorporating time into network analysis. Construction of time-order
 \tabular{ll}{
 Package: \tab timeordered\cr
 Type: \tab Package\cr
-Version: \tab 0.9.3\cr
-Date: \tab 2013-08-14\cr
+Version: \tab 0.9.7\cr
+Date: \tab 2014-10-22\cr
 License: GPL-3
 LazyLoad: \tab yes\cr
 }

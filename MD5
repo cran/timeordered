@@ -1,4 +1,4 @@
-cafd9aee982769aac30e58ac630a1907 *DESCRIPTION
+fcdc96b8b67de51eaebf6a33204338a6 *DESCRIPTION
 924c805ad6f6d8b3def63041c5a2d26d *NAMESPACE
 8a79e9ad010dcd4313faf59040b20c37 *R/applynetworkfunction.R
 b3fb5ca101b321de0f2aea613383f0ef *R/generatelatencies.R
@@ -19,9 +19,9 @@ c30d71a04ef1accd62a7741ec9b764d4 *R/randomizetimes.R
 fbb9fb208ade42a2e49ef46e26c0f706 *R/rarefy.R
 45662e331e849178b512e31c247f1da0 *R/shortesthoppath.R
 41af15f293c6f3d5cf12101cfc02b0e1 *R/shortesttimepath.R
-7237526b20df020630762d7911cf1d2b *R/spreadanalysis.R
+e595e41c7df2cc6f314b0dc553b71e53 *R/spreadanalysis.R
 bb3486c6e6a4c7e5a3fa1cca2ecf7115 *R/timeordered-internal.R
-4921aed020ef62291cf4d69a0922214a *R/transformspreadbyindividual.R
+6301bfdaa7bbd1419c4de19605241475 *R/transformspreadbyindividual.R
 6f803f98800955cbc2bffcfa9fc743c3 *data/ants.rda
 240d9c1e91d33c640180333003a8fe04 *man/ants.Rd
 62611d5dc14bbc8a208c324dcce80248 *man/applynetworkfunction.Rd
@@ -43,6 +43,6 @@ d88a63c824d5b6756829184d373dd0bb *man/randomizeidentities.Rd
 ebc2a9165c65fee303b3edb160055fe5 *man/rarefy.Rd
 7321df3d4ba97d3d4567942a719a0cb5 *man/shortesthoppath.Rd
 3ca913b17c4093b76cc3578a29f2a323 *man/shortesttimepath.Rd
-76873192cae05937569a49569199b4b9 *man/spreadanalysis.Rd
-66d70704ecbf232c169d1302f39853eb *man/timeordered-package.Rd
+e07926a1904772d85ee02f55b61fd2fe *man/spreadanalysis.Rd
+35ba83df9d3da977a17f9970d715bf5a *man/timeordered-package.Rd
 575e833cf4a858349195378fe5ab73d1 *man/transformspreadbyindividual.Rd

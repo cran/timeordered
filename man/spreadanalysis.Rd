@@ -8,7 +8,7 @@ Simulates the perfect spread of a resource on a time-ordered network.
 Determines the number of unique vertices that can be causally linked to an interaction event after a certain time delay. This function determines the fraction of unique vertices reached after a certain time from a random sample of interaction events.
 }
 \usage{
-spreadanalysis(g, timedelays, numsamples)
+spreadanalysis(g, timedelays, numsamples, normalizebyname=FALSE)
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{
@@ -20,6 +20,9 @@ A vector time delays at which to determine the fraction of vertices reached.
 }
   \item{numsamples}{
 The number of random events to sample (without replacement) as seeds for the spreading process.
+}
+  \item{normalizebyname}{
+If true, divides the number of vertices reached by the number of unique vertex names; if false, by the number of time-ordered vertices.
 }
 }
 

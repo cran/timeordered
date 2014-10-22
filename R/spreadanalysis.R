@@ -1,5 +1,5 @@
 spreadanalysis <-
-function(g, timedelays, numsamples)
+function(g, timedelays, numsamples, normalizebyname=FALSE)
 {
 	numreached <- matrix(NA, nrow=numsamples, ncol=length(timedelays))
 
@@ -25,7 +25,14 @@ function(g, timedelays, numsamples)
 		print(i/numsamples)
 	}
 	
-	tempresult <- data.frame(vnames, numreached/length(V(g)))
+  if (normalizebyname)
+  {
+    tempresult <- data.frame(vnames, numreached / length(unique(V(g)$Name)))
+  }
+  else
+  {
+    tempresult <- data.frame(vnames, numreached/length(V(g)))    
+  }
 	names(tempresult) <- c("startvertex",paste(timedelays))
   
 	return(tempresult)

@@ -1,5 +1,5 @@
-4836cddbde7714e3c6557e1980afd61b *DESCRIPTION
-924c805ad6f6d8b3def63041c5a2d26d *NAMESPACE
+4b5752c0d2ce30a6bb28da49a3f7d387 *DESCRIPTION
+dec09e2317722bd572f164bb61c69c20 *NAMESPACE
 8a79e9ad010dcd4313faf59040b20c37 *R/applynetworkfunction.R
 b3fb5ca101b321de0f2aea613383f0ef *R/generatelatencies.R
 052e8a775c6038458875d9fa0b3edd90 *R/generatenetworkslices.R
@@ -12,8 +12,8 @@ ec28b11f5e446c201f6343ff60204b8c *R/generatetonetworkfromvel.R
 5f7dbd4fdfb920b3961c7d83076d09ca *R/maxpoints.R
 86c02e7e0ff3a1679f7138ce1e06388c *R/midpoints.R
 c71a572f384d0919c0740e8b7eccb508 *R/null_models.R
-7a4d732a4ec3e608382632429f576478 *R/plotnetworkslices.R
-540f1551f62fa1ae7ad80164cda751de *R/plottanet.R
+953ee309f651723b89bb6f430eb961c9 *R/plotnetworkslices.R
+a9be84236b117f5fa674481fedc5d7bf *R/plottanet.R
 d768d53230f3a2532eac3f0d12194d13 *R/plottonet.R
 13fcf7100284d8eac17ca957f4acd79b *R/randomization_procedures.R
 c8925e5dff3fd474202d06bdd2567f5e *R/randomizeidentities.R
@@ -37,8 +37,8 @@ f7775e498507db1fe0afb432d4b6d5bb *man/generatetimelags.Rd
 ad02a7e85b90f0665ab02cb310214c06 *man/generatevertexedgelist.Rd
 7e354eaa6458972bf9cfdf386184cf5e *man/maxpoints.Rd
 297c97e1ce2b63689fe9fdac30bebea8 *man/midpoints.Rd
-49bc899539bdf9f64bf2b4c8080f7d03 *man/plotnetworkslices.Rd
-3270b16fc4efd49c47c9a4e9812df3de *man/plottanet.Rd
+8e729d39d1829039be3abb390605ecbb *man/plotnetworkslices.Rd
+2a775d45cbbff1c40355428a49e7eef3 *man/plottanet.Rd
 0653308bd7d856ecbfac1616266668f3 *man/plottonet.Rd
 96dcbe13c22cfdc44593c0e8807265ab *man/randomize_edges_helper.Rd
 d88a63c824d5b6756829184d373dd0bb *man/randomizeidentities.Rd

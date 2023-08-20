@@ -1,18 +1,19 @@
 Package: timeordered
 Type: Package
 Title: Time-Ordered and Time-Aggregated Network Analyses
-Version: 0.9.9
-Date: 2018-07-04
+Version: 1.0.0
+Date: 2023-08-19
 Author: Benjamin Blonder
-Maintainer: Benjamin Blonder <bblonder@gmail.com>
+Maintainer: Benjamin Blonder <benjamin.blonder@berkeley.edu>
 Description: Approaches for incorporating time into network analysis. Methods include: construction of time-ordered networks (temporal graphs); shortest-time and shortest-path-length analyses; resource spread calculations; data resampling and rarefaction for null model construction; reduction to time-aggregated networks with variable window sizes; application of common descriptive statistics to these networks; vector clock latencies; and plotting functionalities. The package supports <doi:10.1371/journal.pone.0020298>. 
 License: GPL-3
 LazyLoad: yes
+LazyData: true
 Depends: igraph, plyr
 Enhances:
 BuildManual: no
 Imports: methods
 NeedsCompilation: no
-Packaged: 2018-07-04 22:31:02 UTC; benjaminblonder
+Packaged: 2023-08-19 21:18:10 UTC; benjaminblonder
 Repository: CRAN
-Date/Publication: 2018-07-04 22:50:02 UTC
+Date/Publication: 2023-08-20 22:20:02 UTC

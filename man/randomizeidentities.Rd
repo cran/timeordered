@@ -40,7 +40,7 @@ An event list of the same size or smaller as raw. The returned event list will b
 }
 \examples{
 data(ants)
-allindivs <- c(union(ants$VertexFrom, ants$VertexTo), "NULL1", "NULL2")
+allindivs <- c(union(as.character(ants$VertexFrom), as.character(ants$VertexTo)), "NULL1", "NULL2")
 ri <- randomizeidentities(ants,withinvertexfrom=TRUE,byvertexfrom=TRUE,withreplacement=TRUE)
 g <- generatetonetwork(ri, allindivs)
 plottonet(g)

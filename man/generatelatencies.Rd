@@ -36,7 +36,7 @@ Return value can require large memory allocation depending on the data set. Ensu
 
 \examples{
 data(ants)
-allindivs <- c(union(ants$VertexFrom, ants$VertexTo), "NULL1", "NULL2")
+allindivs <- c(union(as.character(ants$VertexFrom), as.character(ants$VertexTo)), "NULL1", "NULL2")
 l <- generatelatencies(ants, allindivs)
 image(l[,,1000],axes=FALSE,frame=TRUE,col=rainbow(100))
 axis(1, at = (1:ncol(l))/ncol(l), labels=colnames(l),tick=FALSE,las=2,cex.axis=0.2)

@@ -37,7 +37,7 @@ A weighted time-aggregated network whose edge weights equal the number of intera
 }
 \examples{
 data(ants)
-allindivs <- c(union(ants$VertexFrom, ants$VertexTo), "NULL1", "NULL2")
+allindivs <- c(union(as.character(ants$VertexFrom), as.character(ants$VertexTo)), "NULL1", "NULL2")
 g <- generatetonetwork(ants, allindivs)
 tan500 <- generatetimeaggregatednetwork(g, 0, 500)
 plottanet(tan500)

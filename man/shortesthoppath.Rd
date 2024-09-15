@@ -45,7 +45,7 @@ Multiple shortest-hop paths may exist; returns only one of them.
 }
 \examples{
 data(ants)
-allindivs <- c(union(ants$VertexFrom, ants$VertexTo), "NULL1", "NULL2")
+allindivs <- c(union(as.character(ants$VertexFrom), as.character(ants$VertexTo)), "NULL1", "NULL2")
 g <- generatetonetwork(ants, allindivs)
 shp <- shortesthoppath(g, "WBGG", 927, "GYGG", 1423)
 plottonet(g, shp)

@@ -34,7 +34,7 @@ A list whose entries represent the function's value for each network
 }
 \examples{
 data(ants)
-allindivs <- c(union(ants$VertexFrom, ants$VertexTo), "NULL1", "NULL2")
+allindivs <- c(union(as.character(ants$VertexFrom), as.character(ants$VertexTo)), "NULL1", "NULL2")
 g <- generatetonetwork(ants, allindivs)
 td100 <- generatetimedeltas(0,1500,100)
 ns100 <- generatenetworkslices(g, td100)

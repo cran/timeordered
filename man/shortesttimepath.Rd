@@ -44,7 +44,7 @@ May generate warning messages - don't worry!
 }
 \examples{
 data(ants)
-allindivs <- c(union(ants$VertexFrom, ants$VertexTo), "NULL1", "NULL2")
+allindivs <- c(union(as.character(ants$VertexFrom), as.character(ants$VertexTo)), "NULL1", "NULL2")
 g <- generatetonetwork(ants, allindivs)
 stp <- shortesttimepath(g, "WBGG", 927, "Q")
 plottonet(g, stp)

@@ -1,4 +1,4 @@
-f77475ee9769e18b1558c7cee1c250ce *DESCRIPTION
+8500171f4ad6ca94453eeedb3750ccbb *DESCRIPTION
 dec09e2317722bd572f164bb61c69c20 *NAMESPACE
 8a79e9ad010dcd4313faf59040b20c37 *R/applynetworkfunction.R
 027a7382c03d01aa1ebe0d3c23518394 *R/generatelatencies.R
@@ -48,4 +48,4 @@ f20b995302e17bc183cc577a26cddf77 *man/randomly_permuted_times.Rd
 6eef890b998a410980b182d763339673 *man/shortesttimepath.Rd
 859ab809b7fbd3879cd84f75af5b6bbc *man/spreadanalysis.Rd
 cdddb253773990a61db2c408bc1b83d9 *man/swap.Rd
-c9d2545c8a1d79a0be96b47c91cb5915 *man/transformspreadbyindividual.Rd
+00a9377c66da564f81905f6cbd4df6a2 *man/transformspreadbyindividual.Rd
